@@ -9,6 +9,14 @@ using namespace std;
 // 2. Both the arrays are sorted in non-decreasing order.
 // 3. The output should be in the order of elements that occur in the original arrays.
 // 4. If there is no intersection present then return an empty array.
+
+
+//Approach
+//Compare value of arr1 with all value of arr2
+//if arr1->value == arr2->value
+//then push that value into answer array and update matched value of arr2 with some dummy value so 
+//that it cannot be added again
+
 vector<int> findArrayIntersection(vector<int> &arr1, int n, vector<int> &arr2, int m)
 {
     vector<int> ans;
