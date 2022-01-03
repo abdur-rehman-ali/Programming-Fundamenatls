@@ -11,8 +11,11 @@ int main()
 
     char ch[4] = "ali";
     //In case of character array,
-    //name of array will print entire character
+    //name of array will print entire character till it find '\0'
     cout<<"Character array :" <<ch<<endl;
+    cout<<"Character array :" <<*ch+1<<endl;
+    cout<<"Character array :" <<&ch<<endl;
+    cout<<"Character array :" <<ch+1<<endl;
 
     char *c = &ch[0];
     cout<<c<<endl;
