@@ -12,11 +12,11 @@ int main()
     cout<<"Value of ptr " <<ptr<<endl;     //address1
     cout<<"Address of ptr " <<&ptr<<endl;   //address2
 
-    //incrementing value
-    *ptr = *ptr + 1;
+    //incrementing address
+    ptr = ptr + 1;
 
-    cout<<"Derefrencing ptr "<<*ptr<<endl; //6
-    cout<<"Value of ptr " <<ptr<<endl;      //address1
+    cout<<"Derefrencing ptr "<<*ptr<<endl; //Dummy value
+    cout<<"Value of ptr " <<ptr<<endl;      //Dummy addres
     cout<<"Address of ptr " <<&ptr<<endl;// address2
 
 
