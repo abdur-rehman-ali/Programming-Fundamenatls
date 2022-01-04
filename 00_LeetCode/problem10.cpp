@@ -4,35 +4,10 @@
 
 using namespace std;
 
-// PROBLEM STATEMENT
-// You are given an integer array 'ARR' of size 'N' and an integer 'S'. Your task is to return the list of all pairs of elements such that each sum of elements of each pair equals 'S'
 
-//important note
-// Each pair should be sorted i.e the first value should be less than or equals to the second value.
-// Return the list of pairs sorted in non-decreasing order of their first value. In case if two pairs have the same first value, the pair with a smaller second value should come first.
+// https://bit.ly/32Gab7v
 
-// input 1
-// 5
-// 1 2 3 4 5
-
-// output 1
-// 1 4
-// 2 3
-
-// input 2
-// 0
-// 2 -3 3 3 -2
-
-//output 2
-// -3 3
-// -3 3
-// -2 2
-
-bool sortcol(const vector<int> &v1,
-             const vector<int> &v2)
-{
-    return v1[0] < v2[0];
-}
+//Pair sum problem
 
 vector<vector<int>> pairSum(vector<int> &arr, int s)
 {
@@ -59,7 +34,7 @@ vector<vector<int>> pairSum(vector<int> &arr, int s)
         }
     }
 
-    sort(main_vector.begin(), main_vector.end(), sortcol);
+    sort(main_vector.begin(), main_vector.end());
     return main_vector;
 }
 
