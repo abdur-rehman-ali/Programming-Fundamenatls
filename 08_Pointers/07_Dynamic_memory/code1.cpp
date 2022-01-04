@@ -29,4 +29,10 @@ int main()
     cout << "Size of num1 pointer = " << sizeof(num3) << endl;
     cout << "Size of value store at num3 = " << sizeof(*num3) << endl
          << endl;
+
+
+    //Free the memory in heap
+    delete num1;
+    delete num2;
+    delete num3;
 }
